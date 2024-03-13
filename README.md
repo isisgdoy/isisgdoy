@@ -2,7 +2,7 @@
 
 - 👋 Olá mundo! Eu sou a Isis :)
 - 👀 Estudante em Análise e desenvolvimento de sistemas
-- 🌱 Iniciante na programção
+- 🌱 Iniciante na programação
 ##
 <div> 
   
