@@ -1,7 +1,6 @@
 
 
-- 👋 Olá mundo! Eu sou a Isis :)
-- 👀 Estudante em Análise e desenvolvimento de sistemas
+- Estudante de Análise e desenvolvimento de sistemas
 - 🌱 Iniciante na programação
 ##
 <div> 
@@ -345,6 +344,123 @@ namespace JogarDados // modulo
 
     }
 
+
+HORA E DATA
+
+
+using System;
+using System.Threading;
+
+namespace HoraeData 
+{
+
+    public class Program 
+    {
+        public static string diaDaSemana;
+        public static string mes;
+
+        public static void Main(string[] args)
+        {
+            
+
+            Console.WriteLine("========================");
+            Console.WriteLine($"Hora & data");
+            Console.WriteLine("========================");
+            
+
+            while (true)  // Contador do Programa, atualiza a data e hora a cada 1 segundo 
+            {       
+                    switch ((int)DateTime.Now.DayOfWeek) // para determinar o dia da semana
+                {
+                    case 0:
+                        diaDaSemana = "Domingo";
+                        break;
+                    case 1:
+                        diaDaSemana = "Segunda-Feira";
+                        break;
+                    case 2:
+                        diaDaSemana = "Terça-Feira";
+                        break;
+                    case 3:
+                        diaDaSemana = "Quarta-Feira";
+                        break;
+                    case 4:
+                        diaDaSemana = "Quinta-Feira";
+                        break;
+                    case 5:
+                        diaDaSemana = "Sexta-Feira";
+                        break;
+                    case 6:
+                        diaDaSemana = "Sábado";
+                        break;
+                    default:
+                        diaDaSemana = "N/D";
+                        break;
+                }
+
+                
+                switch ((int)DateTime.Now.Month) // Switch para determinar o nome do mês
+                {
+                    case 1:
+                        mes = "Janeiro";
+                        break;
+                    case 2:
+                        mes = "Fevereiro";
+                        break;
+                    case 3:
+                        mes = "Março";
+                        break;
+                    case 4:
+                        mes = "Abril";
+                        break;
+                    case 5:
+                        mes = "Maio";
+                        break;
+                    case 6:
+                        mes = "Junho";
+                        break;
+                    case 7:
+                        mes = "Julho";
+                        break;
+                    case 8:
+                        mes = "Agosto";
+                        break;
+                    case 9:
+                        mes = "Setembro";
+                        break;
+                    case 10:
+                        mes = "Outubro";
+                        break;
+                    case 11:
+                        mes = "Novembro";
+                        break;
+                    case 12:
+                        mes = "Dezembro";
+                        break;
+                    default:
+                        mes = "N/D";
+                        break;
+                }
+
+                // Data e Hora são atualizados usando a mesma linha no console
+                //{0} = diaDaSemana
+                //{ 1} = mes
+                //{ 2} =
+
+                Console.Write("\r{0} - {1} de {2} de {3} - {4}", diaDaSemana, DateTime.Now.ToString("dd"), mes, DateTime.Now.ToString("yyyy"), DateTime.Now.ToString("HH:mm:ss"));
+
+                Thread.Sleep(1000); // Thread Principal espera 1 segundo antes de continuar o loop
+
+
+            }
+
+
+
+        }
+
+    }
+
+}
 
 }
 
