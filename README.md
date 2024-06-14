@@ -191,13 +191,45 @@ namespace Calculadora
 
 JOGAR DADOS
 
+>> program.cs
 
+
+
+using JogoDeDados;
 using System;
 using System.Diagnostics.Metrics;
 
 namespace JogarDados // modulo
 {
     class Program //classe
+    {
+        static void Main(string[] args) // metodos (funções) esse método deve receber como parâmetro um array de String (nomeado args)
+        {
+            MetodosJogo metodosJogo = new(); // chamando a classe para instancias os metodos 
+
+            Console.Clear();
+
+            metodosJogo.ConfigurarJogos(); // instanciando os metodos da classe metodoJogo
+            metodosJogo.IniciarRodadas();
+
+        }
+    }
+}
+
+
+>>> MetodosJogo.cs
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace JogoDeDados
+{
+    public class MetodosJogo
     {
         // criação das variaveis para acessar os jogadores de qqlr metodo
 
@@ -213,15 +245,8 @@ namespace JogarDados // modulo
 
         public static byte RodadaAtual;
 
-        static void Main(string[] args) // metodos (funções) esse método deve receber como parâmetro um array de String (nomeado args)
-        {
-            Console.Clear();
-            ConfigurarJogos();
-            IniciarRodadas();
-           
-        }
 
-        public static void ConfigurarJogos() 
+        public void ConfigurarJogos()
         {
             RodadaAtual = 0; // campo/fields (variavel criada pra ser acessado em qqlr metodo)
 
@@ -237,11 +262,11 @@ namespace JogarDados // modulo
         public static void CriarJogadores()
         {
             Console.WriteLine("Informe o nome do primeiro jogador:");
-            Jogador1 = Console.ReadLine();
+            Jogador1 = Console.ReadLine()!;
             PontosJogador1 = 0;
 
             Console.WriteLine("Informe o nome do segundo jogador:");
-            Jogador2 = Console.ReadLine();
+            Jogador2 = Console.ReadLine()!;
             PontosJogador2 = 0;
 
         }
@@ -249,11 +274,11 @@ namespace JogarDados // modulo
         public static void AtualizarPlacar()
         {
             Console.Clear(); //é usado para limpar as mensagens do console
-            Console.WriteLine($"Pontos do jogador {Jogador1}: {PontosJogador1}" );
+            Console.WriteLine($"Pontos do jogador {Jogador1}: {PontosJogador1}");
             Console.WriteLine($"Ponstos do jogador {Jogador2}: {PontosJogador2}");
             Console.WriteLine();
 
-            if (RodadaAtual == 0) 
+            if (RodadaAtual == 0)
             {
 
                 Console.WriteLine("Jogo nao iniciado...");
@@ -262,13 +287,13 @@ namespace JogarDados // modulo
         }
 
 
-        public static void IniciarRodadas()
+        public void IniciarRodadas()
         {
             AtualizarPlacar();
-            if (RodadaAtual == 3) 
+            if (RodadaAtual == 3)
             {
                 FinalizarJogo();
-                    return;
+                return;
             }
 
             RodadaAtual++; // incrementando no metodo RodadaAtual
@@ -291,25 +316,26 @@ namespace JogarDados // modulo
                 Console.WriteLine("Pressione ENTER para continuar com o jogo...");
                 Console.ReadLine();
             }
-            else 
+            else
             {
                 string Vencedor;
 
-                if (ValorTiradoJogador1 > ValorTiradoJogador2) 
+                if (ValorTiradoJogador1 > ValorTiradoJogador2)
                 {
                     Vencedor = Jogador1;
                     PontosJogador1++;
-                
-                } else 
+
+                }
+                else
                 {
                     Vencedor = Jogador2;
                     PontosJogador2++;
-                    
+
                 }
 
                 Console.WriteLine($"{Jogador1} tirou o numero {ValorTiradoJogador1} e {Jogador2} tirou o numero {ValorTiradoJogador2}. O vencedor foi: {Vencedor}, da rodada {RodadaAtual}");
                 Console.WriteLine("Pressione ENTER para continuar o jogo...");
-                Console.ReadLine(); 
+                Console.ReadLine();
 
             }
 
@@ -343,6 +369,9 @@ namespace JogarDados // modulo
         }
 
     }
+}
+
+
 
 
 HORA E DATA
