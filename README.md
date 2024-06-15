@@ -2,9 +2,17 @@
 
 ### Olá, meu nome é Isis!
 
-<img src="https://img.shields.io/static/v1?label=Overview&message=Isis Bueno&color=f8efd4&style=for-the-badge&logo=GitHub" alt="Static GitHub">
-
 <p>Desenvolvedora Full Stack</p>
+
+
+
+
+![isisgdoy's Stats](https://github-readme-stats.vercel.app/api?username=isisgdoy&theme=tokyonight&show_icons=true&hide_border=false&count_private=true) 
+
+![isisgdoy's Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=isisgdoy&theme=tokyonight&show_icons=true&hide_border=false&layout=compact)
+
+
+
 <div> 
   
   <a href="https://www.instagram.com/isis_godoy/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
