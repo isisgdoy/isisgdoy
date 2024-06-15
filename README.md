@@ -1,9 +1,10 @@
+<img src="https://raw.githubusercontent.com/MicaelliMedeiros/micaellimedeiros/master/image/computer-illustration.png" alt="ilustração de um computador" min-width="400px" max-width="400px" width="400px" align="right">
 
 ### Olá, meu nome é Isis!
 
 <img src="https://img.shields.io/static/v1?label=Overview&message=Isis Bueno&color=f8efd4&style=for-the-badge&logo=GitHub" alt="Static GitHub">
 
-<p>Trabalhando na Input<br/> Desenvolvedora Full Stack</p>
+<p>Desenvolvedora Full Stack</p>
 <div> 
   
   <a href="https://www.instagram.com/isis_godoy/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
