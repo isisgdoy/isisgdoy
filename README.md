@@ -10,7 +10,7 @@
 
 ---
 
-#### 🚀 Minhas Skills
+#### Minhas Skills
 
 <code><img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="c"/></code>
 <code><img height="32" src="https://cdn.iconscout.com/icon/free/png-512/c-programming-569564.png" alt="c"/></code>
