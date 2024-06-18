@@ -1,6 +1,6 @@
 ## Olá, meu nome é Isis!
 
-<p>Backend Developer Intern at Input Tecnologia</p>
+<p>Full Stack Developer Intern at Input Tecnologia</p>
 
 
 
